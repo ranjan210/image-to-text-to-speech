@@ -7,15 +7,23 @@
 </head>
 
 <body>
-    <div>
-        Give us your link haha
-        <input type="text"
-               id="image"
-               maxlength="100">
-        <button onclick="getAudio()">
-        </button>
-        <img id="source-image">
-    </div>
+    <div class="center">
+        <div class="col">
+            <div id="logo">The Third Eye</div>
+            <img id="source-image">
+            <canvas id="canvas"></canvas>
+
+            <input type="text"
+                   id="image-link"
+                   placeholder="Paste Image Link">
+
+            <audio id="audio"
+                   controls></audio>
+            <button onclick="getAudio()">
+                Play Audio
+            </button>
+        </div>
+
     </div>
 </body>
 

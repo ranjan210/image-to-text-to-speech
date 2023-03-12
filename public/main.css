@@ -1,4 +1,70 @@
-button{
-    width: 200px;
-    height: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.col > * {
+  margin-top: 2%;
+}
+
+#logo {
+  font-family: "Open Sans", sans-serif;
+  color: #e17055;
+  font-size: 40px;
+}
+
+#source-image {
+  min-width: 400px;
+  min-height: 300px;
+  max-width: 400px;
+  max-height: 300px;
+  object-fit: fill;
+}
+
+#canvas {
+  width: 400px;
+  height: 100px;
+
+}
+
+#image-link {
+  height: 36px;
+  width: 496px;
+  outline: none;
+  padding: 1%;
+  border: none;
+  border-bottom: 1px solid #e17055;
+}
+
+#image-link:focus {
+  border-bottom: solid 2px #fab1a0;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #e17055;
+  outline: none;
+  border: none;
+  color: white;
 }
